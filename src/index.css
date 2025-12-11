@@ -1,0 +1,364 @@
+:root {
+  --color-primary: #2563eb;
+  --color-primary-soft: #dbeafe;
+  --color-primary-dark: #1d4ed8;
+  --color-bg: #f3f4f6;
+  --color-bg-soft: #ffffff;
+  --color-text: #111827;
+  --color-muted: #6b7280;
+  --radius-lg: 16px;
+  --shadow-soft: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+
+.app-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+.app-navbar .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.app-navbar .nav-link.active {
+  background-color: var(--color-primary-soft);
+  border-radius: 999px;
+  color: var(--color-primary) !important;
+  font-weight: 500;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+}
+
+.auth-hero {
+  background: radial-gradient(circle at top left, #2563eb, #1e293b);
+  color: #f9fafb;
+}
+
+.auth-hero-content {
+  max-width: 420px;
+}
+
+.auth-card {
+  background-color: #ffffff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 2rem 2.25rem;
+}
+
+@media (max-width: 767.98px) {
+  .auth-card {
+    padding: 1.75rem 1.5rem;
+  }
+}
+
+.product-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  border: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  background-color: #ffffff;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.14);
+}
+
+.product-card-img {
+  height: 190px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.product-card-title {
+  font-weight: 600;
+}
+
+.product-card-category {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.dashboard-wrapper {
+  min-height: 100vh;
+  display: flex;
+  background-color: #f3f4f6;
+}
+
+.dashboard-sidebar {
+  width: 260px;
+  background: linear-gradient(to bottom, #020617, #111827);
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-sidebar-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.dashboard-sidebar-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.dashboard-sidebar-menu {
+  flex: 1;
+  padding: 0.75rem 0;
+}
+
+.dashboard-sidebar-menu .nav-link {
+  color: #e5e7eb;
+  font-size: 0.92rem;
+  padding: 0.55rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.dashboard-sidebar-menu .nav-link:hover {
+  background-color: rgba(148, 163, 184, 0.12);
+}
+
+.dashboard-sidebar-menu .nav-link.active {
+  background-color: rgba(37, 99, 235, 0.25);
+  border-left: 3px solid #60a5fa;
+}
+
+.dashboard-sidebar-footer {
+  padding: 1rem 1.5rem;
+  font-size: 0.8rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-main-header {
+  background-color: #ffffff;
+  padding: 0.85rem 1.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-main-content {
+  padding: 1.75rem;
+}
+
+
+.catalog-page,
+.cart-page {
+  padding-top: 4.5rem;
+}
+
+
+.catalog-filters {
+  border-radius: 12px;
+}
+
+.catalog-filters h6 {
+  font-size: 0.9rem;
+}
+
+.catalog-search input {
+  max-width: 260px;
+}
+
+.range-slider {
+  position: relative;
+  height: 32px;
+}
+
+.range-slider input[type="range"] {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 12px;
+  width: 100%;
+  pointer-events: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.range-slider input[type="range"]::-webkit-slider-thumb {
+  pointer-events: auto;
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #2563eb;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 1px #2563eb;
+}
+
+.range-slider input[type="range"]::-moz-range-thumb {
+  pointer-events: auto;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #2563eb;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 1px #2563eb;
+}
+
+.range-slider input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #d1d5db;
+  border-radius: 999px;
+}
+.range-slider input[type="range"]::-moz-range-track {
+  height: 4px;
+  background: #d1d5db;
+  border-radius: 999px;
+}
+
+
+.catalog-filters input[type="number"] {
+  font-size: 0.8rem;
+}
+
+
+.cart-page {
+  padding-top: 4.5rem;
+}
+
+.cart-page-main {
+  min-height: calc(100vh - 120px);
+}
+
+
+
+.cart-banner-card {
+  background: #f3f4f6;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-banner-icon {
+  flex-shrink: 0;
+}
+
+.cart-banner-cart-icon {
+  font-size: 2rem;
+}
+
+.cart-summary-card {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+
+.cart-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cart-item-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  display: flex;
+  gap: 0.9rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.cart-item-img {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-body {
+  flex: 1;
+}
+
+.cart-reco-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.cart-reco-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-reco-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cart-reco-body {
+  padding: 0.8rem 1rem 1rem;
+}
+
+
+@media (max-width: 767.98px) {
+  .cart-banner-card {
+    align-items: flex-start;
+  }
+}
+
+
+.table-panel {
+  background-color: #ffffff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.table-panel table {
+  margin-bottom: 0;
+}
+
+.table-panel-header {
+  padding: 1rem 1.25rem 0.5rem;
+}
+
+.table-panel-body {
+  padding: 0 1.25rem 1.25rem;
+}
+
+@media (max-width: 991.98px) {
+  .dashboard-sidebar {
+    display: none;
+  }
+}
