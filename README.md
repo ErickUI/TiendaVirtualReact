@@ -8,12 +8,6 @@ Aplicación web desarrollada en **React + TypeScript**, diseñada como una **tie
 - Arquitectura modular, escalable y basada en buenas prácticas.
 
 ---
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
-
 
 ## 🚀 Tecnologías Principales
 
