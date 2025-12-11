@@ -174,7 +174,7 @@ export function cerrarSesion() {
 }
 ```
 ## 🛒 Funciones principales del carrito
-###Contexto del carrito
+### Contexto del carrito
 ```
 const agregar = (producto: Producto) => {
   setItems(prev => {
