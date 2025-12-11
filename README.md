@@ -217,5 +217,6 @@ if (!confirmar) return;
 alert('Cambios guardados correctamente.');
 ```
 ## Diagrama de flujo LOGIN
-<img width="4580" height="6380" alt="Untitled diagram-2025-12-11-034425" src="https://github.com/user-attachments/assets/4327ac99-ce17-496e-b335-cbc23e33a7c1" />
+<img width="4196" height="7971" alt="Untitled diagram-2025-12-11-040340" src="https://github.com/user-attachments/assets/6a83e7ac-613f-412c-83f2-332a96e03e87" />
+
 
