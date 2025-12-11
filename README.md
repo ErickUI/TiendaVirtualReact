@@ -25,7 +25,7 @@ Este proyecto utiliza las siguientes herramientas y librerías:
 | **Vite** | Entorno de desarrollo rápido |
 
 
-##📦 Instalación de dependencias
+## 📦 Instalación de dependencias
 
 - npm install
 - npm install react-router-dom
@@ -42,7 +42,7 @@ Este proyecto utiliza las siguientes herramientas y librerías:
 - npm install --save-dev @types/yup @types/react-bootstrap @types/node @types/sweetalert2
 ---
 
-##📦 Archivo db.json Dominios
+## 📦 Archivo db.json Dominios
 
 ```Db.json
 {
@@ -97,13 +97,13 @@ Este proyecto utiliza las siguientes herramientas y librerías:
 }
 ```
 ---
-###Ejecucion del json server
+### Ejecucion del json server
 
 - npx json-server --watch db.json --port 3001
 
 ---
 
-##🔗 API centralizada
+## 🔗 API centralizada
 ### httpClient.ts
 ```
 import axios from 'axios';
@@ -126,7 +126,7 @@ export const endpoints = {
 };
 ```
 
-##⚙️ Funciones CRUD Importantes
+## ⚙️ Funciones CRUD Importantes
 ### Crear productos
 ```
 export function crearProducto(data: Producto) {
@@ -152,7 +152,7 @@ export function eliminarProducto(id: string | number) {
   return httpClient.delete(`${endpoints.productos}/${id}`);
 }
 ```
-##🔑 Autenticación
+## 🔑 Autenticación
 ### Inicio de sesión 
 ```
 export async function iniciarSesion(credenciales: CredencialesLogin) {
@@ -173,7 +173,7 @@ export function cerrarSesion() {
   localStorage.removeItem('usuarioSesion');
 }
 ```
-##🛒 Funciones principales del carrito
+## 🛒 Funciones principales del carrito
 ###Contexto del carrito
 ```
 const agregar = (producto: Producto) => {
@@ -189,7 +189,7 @@ const agregar = (producto: Producto) => {
   });
 };
 ```
-###Eliminar
+### Eliminar
 ```
 const eliminar = (id) =>
   setItems(prev => prev.filter(i => i.producto.id !== id));
@@ -198,9 +198,9 @@ const eliminar = (id) =>
 ```
 const vaciar = () => setItems([]);
 ```
-##🔔 Manejo de mensajes
+## 🔔 Manejo de mensajes
 
-###Error: producto no encontrado
+### Error: producto no encontrado
 ```
 if (!producto) {
   alert('Producto no disponible en el catálogo.');
