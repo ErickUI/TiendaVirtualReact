@@ -87,7 +87,7 @@ Este proyecto utiliza las siguientes herramientas y librerías:
       "apellidos": "Gonzales Méndez",
       "correo": "l.gonzales@mitienda.com",
       "telefono": "954182937",
-      "cargo": "Vendedora senior
+      "cargo": "Vendedora senior"
       "activo": true
     }
   ],
