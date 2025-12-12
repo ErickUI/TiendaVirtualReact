@@ -1,6 +1,6 @@
-# 🛒 Tienda Virtual — Proyecto Completo (React + TypeScript + JSON Server)
+# 🛒 Aplicación web de gestión integral para una tienda de tecnología   — Proyecto Completo (React + TypeScript + JSON Server)
 
-Aplicación web desarrollada en **React + TypeScript**, diseñada como una **tienda virtual completa** con:
+"Aplicación web desarrollada en React + TypeScript, diseñada como un sistema de gestión integral y simulacion de la tienda con:"
 - Módulo público (inicio, catálogo, carrito, registro/login).
 - Módulo privado cliente (panel, pedidos, perfil editable).
 - Módulo administrativo (gestión de productos, usuarios, empleados y pedidos).
